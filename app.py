@@ -1,3 +1,8 @@
 from signLanguage.logger import logging
-
-logging.info("Welcome to my custom log")
+from signLanguage.exception import SignException
+try:
+    a = 5
+    b = 0
+    c = a/b
+except SignException as e:
+    print(e)
