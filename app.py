@@ -1,8 +1,5 @@
-from signLanguage.logger import logging
-from signLanguage.exception import SignException
-try:
-    a = 5
-    b = 0
-    c = a/b
-except SignException as e:
-    print(e)
+from signLanguage.pipeline.training_pipeline import TrainPipeline
+
+obj = TrainPipeline()
+obj.run_pipeline()
+print("Training pipeline finished!")
