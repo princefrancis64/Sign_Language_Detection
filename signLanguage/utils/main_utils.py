@@ -6,7 +6,7 @@ import base64
 from signLanguage.exception import SignException
 from signLanguage.logger import logging
 
-def read_yaml_file(file_path:str)-->dict:
+def read_yaml_file(file_path:str)->dict:
     try:
         with open(file_path,'r') as yaml_file:
             logging.info("Read yaml file successfully")
