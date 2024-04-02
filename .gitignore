@@ -4,6 +4,9 @@ myenv
 ## artifacts
 artifacts
 
+## zip file
+*.zip
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
